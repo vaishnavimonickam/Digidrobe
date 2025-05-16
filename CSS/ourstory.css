@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-family);
+}
+
+:root {
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-28: 28px;
+    --fs-40: 40px;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fs-italic: italic;
+    --bg-brown: #F5EBDF;
+    --bg-black: #212121;
+    --bg-white: white;
+    --btn-pri: #CAA268;
+    --btn-sec: white;
+    --bg-card: #E4D0B4;
+    --text-white: white;
+    --text-black: black;
+    --font-family: "Montserrat", sans-serif;
+}
+
+header {
+    height: 80vh;
+    background-color: var(--bg-brown);
+    display: flex;
+    justify-content: center;
+    background-image: none;
+}
+
+/* Banner */
+
+header .wrapper #banner {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+header .wrapper #banner h1 {
+    height: 20%;
+    width: 100%;
+    font-size: var(--fs-40);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .wrapper #banner .wrap {
+    width: 100%;
+    height: 60%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+header .wrapper #banner .card_carousal {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    gap: 20px;
+    animation: scrollleft 10s linear infinite;
+}
+
+@keyframes scrollleft {
+    form {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-70%);
+    }
+}
+
+header .wrapper #banner .card_carousal img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* section1 */
+
+#mission {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--bg-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mission .heading {
+    height: 20%;
+    width: 100%;
+    background-color: var(--bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+}
+
+#mission .bottom_heading {
+    height: 20%;
+    width: 100%;
+    background-color: var(--bg-white);
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission .content {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#mission .content h1 {
+    font-size: var(--fs-24);
+}
+
+#mission .content p {
+    font-size: var(--fs-20);
+    text-align: center;
+}
+
+/* section2 */
+
+#team {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#team .heading {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-28);
+}
+
+#team .team_members {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#team .team_members .one {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    border-top-left-radius: 150px;
+}
+
+#team .team_members .two {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+#team .team_members .three {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    border-bottom-right-radius: 100px;
+}
+
+/* section3 */
+
+#teamwork {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#teamwork .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#teamwork .container .left_container {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#teamwork .container .left_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#teamwork .container .right_container {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    font-size: var(--fs-20);
+}
+
+
+/* footer */
+
+footer {
+    height: 40vh;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Newsletter column */
+
+footer .column-one {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .column-one form {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: var(--bg-brown);
+    border-radius: 12px;
+}
+
+footer .column-one form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+footer .column-one form button {
+    background-color: transparent;
+    border: none;
+}
+
+footer .column-one .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .column-one .contact p {
+    font-size: var(--fs-20);
+    font-weight: var(--fw-600);
+}
+
+footer .column-one .contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .column-one .contact a {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+footer .column-one .contact .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+/* footer menus */
+
+footer .column-two {
+    display: flex;
+    align-items: start;
+    gap: 40px;
+}
+
+footer .column-two .menu-one {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .column-two .menu-one h1 {
+    font-size: var(--fs-20);
+}
+
+footer .column-two .menu-one ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .column-two .menu-two {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .column-two .menu-two h1 {
+    font-size: var(--fs-20);
+}
+
+footer .column-two .menu-two ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .column-two ul li {
+    display: flex;
+}
+
+footer .column-two ul li a {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+/* appstore */
+
+footer .column-three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+footer .column-three img {
+    height: 100px;
+    width: 300px;
+    border-radius: 12px;
+}

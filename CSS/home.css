@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-family);
+}
+
+:root {
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-28: 28px;
+    --fs-40: 40px;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fs-italic: italic;
+    --bg-brown: #F5EBDF;
+    --bg-black: #212121;
+    --bg-white: white;
+    --btn-pri: #CAA268;
+    --btn-sec: white;
+    --bg-card: #E4D0B4;
+    --text-white: white;
+    --text-black: black;
+    --font-family: "Montserrat", sans-serif;
+}
+
+/* features section */
+
+#features {
+    height: 80vh;
+    width: 100%;
+    background-color: var(--bg-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#features .content {
+    height: 20%;
+    width: 100%;
+}
+
+#features .content h1 {
+    width: 100%;
+    height: 100%;
+    font-size: var(--fs-28);
+    background-color: var(--bg-white);
+    text-align: center;
+    font-weight: var(--fw-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#features .wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#features .wrapper .left_container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#features .wrapper .left_container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#features .wrapper .left_container ul li {
+    list-style: none;
+    font-size: var(--fs-20);
+}
+
+#features .wrapper .right_container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#features .wrapper .right_container .carousal {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    gap: 20px;
+    animation: scrollleft 10s linear infinite;
+}
+
+@keyframes scrollleft {
+    form {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-70%);
+    }
+}
+
+/* advantage section*/
+
+#advantage {
+    height: 90vh;
+    width: 100%;
+    background-color: var(--bg-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#advantage .content {
+    width: 100%;
+    height: 20%;
+    background-color: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#advantage .content h1 {
+    width: 80%;
+    font-size: var(--fs-28);
+    text-align: center;
+    font-weight: var(--fw-300);
+}
+
+#advantage .wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#advantage .wrapper .left_container {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#advantage .wrapper .left_container h1 {
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+    background-color: transparent;
+    text-align: center;
+}
+
+#advantage .wrapper .left_container p {
+    font-size: var(--fs-20);
+    text-align: center;
+}
+
+#advantage .wrapper .right_container {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#advantage .wrapper .right_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* advantage section*/
+
+#feedback {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#feedback .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedback .container .image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#feedback .container .image img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+
+#feedback .container .feedback_form {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#feedback .container .feedback_form .content {
+    height: 20%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#feedback .container .feedback_form .content h1 {
+    font-size: var(--fs-28);
+}
+
+#feedback .container .feedback_form .content p {
+    font-size: var(--fs-16);
+}
+
+#feedback .container .feedback_form form {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10%;
+}
+
+#feedback .container .feedback_form form input {
+    width: 80%;
+    height: 15%;
+    border: none;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+#feedback .container .feedback_form form textarea {
+    width: 80%;
+    height: 24%;
+    border: none;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 10px 0px 10px 10px;
+}
+
+#feedback .container .feedback_form form #button {
+    font-size: var(--fs-16);
+    height: 15%;
+    width: 20%;
+    background-color: var(--btn-pri);
+    color: var(--text-white);
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#feedback .container .feedback_form form #button:hover{
+    color: var(--text-white);
+    background-color: var(--text-black);
+}
+
+/* media query */
+
+@media only screen and (max-width:1344px) {
+    #feedback .container .feedback_form {
+        height: 70%;
+    }
+
+    footer #wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1220px) {
+    header .wrapper #banner {
+        height: 70%;
+    }
+
+    #feedback {
+        height: 70vh;
+    }
+
+    #feedback .container .feedback_form form {
+        height: 60%;
+    }
+
+    #feedback .container .feedback_form .content h1 {
+        font-size: var(--fs-24);
+    }
+
+    #feedback .container .feedback_form .content p {
+        font-size: var(--fs-14);
+    }
+
+    #feedback .container .feedback_form form #button {
+        padding: 5px;
+        font-size: var(--fs-12);
+    }
+
+    footer .column-two {
+        gap: 16px;
+    }
+
+    footer .column-three img {
+        height: 85px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:1096px) {
+    header .wrapper nav ul li a {
+        font-size: var(--fs-16);
+    }
+
+    #features .content h1 {
+        font-size: var(--fs-20);
+    }
+
+    #advantage .content h1 {
+        font-size: var(--fs-20);
+    }
+
+    #feedback {
+        height: 60vh;
+    }
+
+    #feedback .container .feedback_form {
+        height: 70%;
+    }
+
+    #feedback .container .feedback_form form {
+        gap: 5%;
+    }
+
+    footer .column-three img {
+        height: 70px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    header .wrapper nav .logo {
+        height: 70%;
+        width: 20%;
+    }
+
+    #features .wrapper {
+        width: 90%;
+    }
+
+    #advantage {
+        height: 70vh;
+    }
+
+    #advantage .wrapper {
+        width: 90%;
+    }
+
+    #feedback .container {
+        width: 90%;
+    }
+
+    #feedback .container .feedback_form form {
+        height: 60%;
+        gap: 5%;
+        justify-content: center;
+    }
+
+    #feedback .container .feedback_form form #button {
+        font-size: var(--fs-12);
+        padding: 5px;
+    }
+
+    footer .column-two {
+        gap: 12px;
+    }
+
+    footer .column-three img {
+        height: 56px;
+        width: 167px;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    header .wrapper #banner p {
+        font-size: var(--fs-20);
+    }
+
+    #advantage .wrapper .left_container p {
+        font-size: var(--fs-16);
+    }
+
+    #feedback .container .feedback_form form {
+        height: 60%;
+        gap: 5%;
+        justify-content: center;
+    }
+
+    #feedback .container .feedback_form .content h1 {
+        font-size: var(--fs-20);
+    }
+
+    #feedback .container .feedback_form .content p {
+        font-size: var(--fs-12);
+    }
+
+    footer #wrapper .column-two .menu_one h1 {
+        font-size: var(--fs-16);
+    }
+
+    footer #wrapper .column-two .menu_two h1 {
+        font-size: var(--fs-16);
+    }
+}
+
+@media only screen and (max-width:990px) {
+    header .wrapper nav .logo {
+        height: 50%;
+        width: 12%;
+    }
+
+    footer .column-three img {
+        height: 44px;
+        width: 124px;
+    }
+}
+
+@media only screen and (max-width:920px) {
+    header .wrapper #banner {
+        height: 65%;
+    }
+
+    #features .wrapper .left_container ul {
+        gap: 20px;
+    }
+
+    #features .wrapper .right_container {
+        height: 80%;
+    }
+}
